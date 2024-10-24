@@ -26,7 +26,7 @@
     &nbsp;
 - **Mulvariate Analysis:**
 
-  - PCA
+  - PCA/[Factor Analysis of Mixed Data (FAMD)](https://towardsdatascience.com/famd-how-to-generalize-pca-to-categorical-and-numerical-data-2ddbeb2b9210])
   - Clustering techniques (e.g., K-means, hierarchical) to identify patterns or groups
     &nbsp;
 - **Outlier detection:**
