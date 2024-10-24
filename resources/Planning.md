@@ -2,7 +2,7 @@
 
 ## Notebook
 
-- ### EDA (3 points)
+- ### EDA (3 points) - ISA
 - **Dataset  Overview:**
 
   - Number of features, casting, types
@@ -24,19 +24,19 @@
   - Pairplots - Drill down pairwise interesting relationships
   - Hued hists, barcharts and anova for categorical vs numerical
     &nbsp;
-- **Mulvariate Analysis:**
+- **Mulvariate Analysis:  - Diogo**
 
   - PCA/[Factor Analysis of Mixed Data (FAMD)](https://towardsdatascience.com/famd-how-to-generalize-pca-to-categorical-and-numerical-data-2ddbeb2b9210])
   - Clustering techniques (e.g., K-means, hierarchical) to identify patterns or groups
     &nbsp;
-- **Outlier detection:**
+- **Outlier detection: - Diogo**
 
   - Univariate - z-scores if normal, IQR if not
   - Multivariate - [Isolation Forest](https://www.youtube.com/watch?v=O9VvmWj-JAk) or [DBSCAN](https://www.youtube.com/watch?v=RDZUdRSDOok) (dependes on look of the data - dbscan for condensed points with obvious visual separation from other few points)
 
 ---
 
-- ### Data Pre-process (5 points)
+- ### Data Pre-process (5 points) - Pedros
 
   - Handle Missing values
   - Apply transformations to improve feature distribution (check for outliers after)
@@ -44,10 +44,10 @@
   - Feature Engineering - create and analyze new features
   - Categorical Encoding (maybe makes sense to bin first)
   - Scale numerical features
-- ### Feature Selection (3 points)
+- ### Feature Selection (3 points) - Afonso & Isa
 
   - Try 2 approaches: filter, wrapper (embedded not needed, not too many vars)
-- ### Model Training and Assessment (4 points)
+- ### Model Training and Assessment (4 points) - Diogo
 
   - Try Naive Bayes and Logistic regression ( maybe NN depends on time)
 
