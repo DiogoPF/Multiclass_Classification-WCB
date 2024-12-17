@@ -1,2 +1,7 @@
 runs/
 resources/zip_code_database.csv
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
