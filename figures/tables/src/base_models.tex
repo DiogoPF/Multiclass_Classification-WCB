@@ -1,21 +1,21 @@
-\begin{tabular}{lllrll}
-    \toprule
-    \textbf{Model}         & \textbf{Parameters}                                                                   & \textbf{Preprocessing} & \textbf{FS Percentile} & \textbf{F1 Train Score} & \textbf{F1 Validation Score} \\
-    \midrule
-    LogisticRegression     & class\_weight='balanced', max\_iter=1000                                              & baseline               & 50                     & 0.3 ± 0.01              & 0.29 ± 0.02                  \\
-    LogisticRegression     & class\_weight='balanced', max\_iter=1000                                              & baseline               & 90                     & 0.32 ± 0.0              & 0.3 ± 0.01                   \\
-    LogisticRegression     & class\_weight='balanced', max\_iter=1000                                              & baseline               & 70                     & 0.31 ± 0.01             & 0.3 ± 0.01                   \\
-    DecisionTreeClassifier & class\_weight='balanced', max\_depth=15                                               & baseline               & 50                     & 0.45 ± 0.01             & 0.33 ± 0.04                  \\
-    DecisionTreeClassifier & class\_weight='balanced', max\_depth=15                                               & baseline               & 90                     & 0.46 ± 0.01             & 0.34 ± 0.03                  \\
-    DecisionTreeClassifier & class\_weight='balanced', max\_depth=15                                               & baseline               & 70                     & 0.46 ± 0.01             & 0.34 ± 0.03                  \\
-    KNeighborsClassifier   & n\_neighbors=35, p=1, weights='distance'                                              & baseline               & 50                     & 1.0 ± 0.0               & 0.34 ± 0.01                  \\
-    KNeighborsClassifier   & n\_neighbors=35, p=1, weights='distance'                                              & baseline               & 90                     & 1.0 ± 0.0               & 0.34 ± 0.0                   \\
-    KNeighborsClassifier   & n\_neighbors=35, p=1, weights='distance'                                              & baseline               & 70                     & 1.0 ± 0.0               & 0.34 ± 0.01                  \\
-    GaussianNB             & base model                                                                            & baseline               & 50                     & 0.27 ± 0.01             & 0.27 ± 0.01                  \\
-    GaussianNB             & base model                                                                            & baseline               & 90                     & 0.13 ± 0.01             & 0.12 ± 0.01                  \\
-    GaussianNB             & base model                                                                            & baseline               & 70                     & 0.18 ± 0.04             & 0.18 ± 0.03                  \\
-    MLPClassifier          & hidden\_layer\_sizes=(20, 20), learning\_rate\_init=0.01,              max\_iter=1000 & baseline               & 50                     & 0.36 ± 0.02             & 0.34 ± 0.01                  \\
-    MLPClassifier          & hidden\_layer\_sizes=(20, 20), learning\_rate\_init=0.01,              max\_iter=1000 & baseline               & 90                     & 0.39 ± 0.02             & 0.37 ± 0.01                  \\
-    MLPClassifier          & hidden\_layer\_sizes=(20, 20), learning\_rate\_init=0.01,              max\_iter=1000 & baseline               & 70                     & 0.37 ± 0.02             & 0.36 ± 0.02                  \\
-    \bottomrule
+\begin{tabular}{llrll}
+\toprule
+model & model\_parameters & FS Percentile & F1 Train Score & F1 Validation Score \\
+\midrule
+MLPClassifier & hidden\_layer\_sizes=(20, 20), learning\_rate\_init=0.01,              max\_iter=1000 & 90 & 0.39 ± 0.02 & 0.37 ± 0.01 \\
+MLPClassifier & hidden\_layer\_sizes=(20, 20), learning\_rate\_init=0.01,              max\_iter=1000 & 70 & 0.37 ± 0.02 & 0.36 ± 0.02 \\
+MLPClassifier & hidden\_layer\_sizes=(20, 20), learning\_rate\_init=0.01,              max\_iter=1000 & 50 & 0.36 ± 0.02 & 0.34 ± 0.01 \\
+LogisticRegression & class\_weight='balanced', max\_iter=1000 & 90 & 0.32 ± 0.0 & 0.3 ± 0.01 \\
+LogisticRegression & class\_weight='balanced', max\_iter=1000 & 70 & 0.31 ± 0.01 & 0.3 ± 0.01 \\
+LogisticRegression & class\_weight='balanced', max\_iter=1000 & 50 & 0.3 ± 0.01 & 0.29 ± 0.02 \\
+KNeighborsClassifier & n\_neighbors=35, p=1, weights='distance' & 50 & 1.0 ± 0.0 & 0.34 ± 0.01 \\
+KNeighborsClassifier & n\_neighbors=35, p=1, weights='distance' & 70 & 1.0 ± 0.0 & 0.34 ± 0.01 \\
+KNeighborsClassifier & n\_neighbors=35, p=1, weights='distance' & 90 & 1.0 ± 0.0 & 0.34 ± 0.0 \\
+GaussianNB & base model & 50 & 0.27 ± 0.01 & 0.27 ± 0.01 \\
+GaussianNB & base model & 70 & 0.18 ± 0.04 & 0.18 ± 0.03 \\
+GaussianNB & base model & 90 & 0.13 ± 0.01 & 0.12 ± 0.01 \\
+DecisionTreeClassifier & class\_weight='balanced', max\_depth=15 & 90 & 0.46 ± 0.01 & 0.34 ± 0.03 \\
+DecisionTreeClassifier & class\_weight='balanced', max\_depth=15 & 70 & 0.46 ± 0.01 & 0.34 ± 0.03 \\
+DecisionTreeClassifier & class\_weight='balanced', max\_depth=15 & 50 & 0.45 ± 0.01 & 0.33 ± 0.04 \\
+\bottomrule
 \end{tabular}

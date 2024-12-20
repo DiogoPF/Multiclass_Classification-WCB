@@ -1,0 +1,21 @@
+\begin{tabular}{lllrlll}
+\toprule
+Activation Function & Architecture & Learning Rate & Initial Learning Rate & Solver & F1 Train Score & F1 Validation Score \\
+\midrule
+relu & (30, 30) & adaptive & 0.02 & sgd & 0.42 ± 0.01 & 0.4 ± 0.02 \\
+relu & (30, 30) & constant & 0.02 & sgd & 0.42 ± 0.01 & 0.4 ± 0.01 \\
+tanh & (30, 30) & constant & 0.01 & sgd & 0.41 ± 0.01 & 0.4 ± 0.01 \\
+relu & (20, 20, 20) & adaptive & 0.02 & sgd & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+relu & (30, 30) & adaptive & 0.01 & adam & 0.41 ± 0.01 & 0.39 ± 0.01 \\
+tanh & (20, 20, 20) & adaptive & 0.00 & sgd & 0.41 ± 0.01 & 0.39 ± 0.01 \\
+relu & (30, 30) & adaptive & 0.01 & sgd & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+relu & (30, 30) & adaptive & 0.00 & sgd & 0.41 ± 0.01 & 0.39 ± 0.01 \\
+relu & (30, 30) & constant & 0.00 & sgd & 0.41 ± 0.01 & 0.39 ± 0.01 \\
+tanh & (20, 20, 20) & constant & 0.01 & sgd & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+tanh & (20, 20, 20) & constant & 0.02 & sgd & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+relu & (30, 30) & constant & 0.01 & sgd & 0.41 ± 0.01 & 0.39 ± 0.01 \\
+logistic & (30, 30) & adaptive & 0.00 & adam & 0.41 ± 0.01 & 0.39 ± 0.01 \\
+tanh & (30, 30) & adaptive & 0.00 & sgd & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+tanh & (30, 30) & adaptive & 0.02 & sgd & 0.42 ± 0.0 & 0.39 ± 0.01 \\
+\bottomrule
+\end{tabular}
