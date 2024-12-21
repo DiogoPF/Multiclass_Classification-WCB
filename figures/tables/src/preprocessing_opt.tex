@@ -1,0 +1,42 @@
+\begin{tabular}{llllll}
+\toprule
+Model & Encoding Strategy & Outlier Detection & Scaler & F1 Train Score & F1 Validation Score \\
+\midrule
+MLPClassifier & Frequency Encoder & Percentile & MinMaxScaler & 0.41 ± 0.00 & 0.40 ± 0.02 \\
+MLPClassifier & Frequency Encoder & Percentile & StandardScaler & 0.42 ± 0.02 & 0.39 ± 0.01 \\
+MLPClassifier & Frequency Encoder & Percentile & RobustScaler & 0.28 ± 0.00 & 0.28 ± 0.01 \\
+MLPClassifier & Frequency Encoder & IQR & StandardScaler & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+MLPClassifier & Frequency Encoder & IQR & MinMaxScaler & 0.40 ± 0.02 & 0.39 ± 0.01 \\
+MLPClassifier & Frequency Encoder & IQR & RobustScaler & 0.36 ± 0.01 & 0.35 ± 0.00 \\
+MLPClassifier & Frequency Encoder Normalized & Percentile & StandardScaler & 0.42 ± 0.01 & 0.40 ± 0.01 \\
+MLPClassifier & Frequency Encoder Normalized & Percentile & MinMaxScaler & 0.42 ± 0.01 & 0.40 ± 0.01 \\
+MLPClassifier & Frequency Encoder Normalized & Percentile & RobustScaler & 0.32 ± 0.02 & 0.31 ± 0.02 \\
+MLPClassifier & Frequency Encoder Normalized & IQR & StandardScaler & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+MLPClassifier & Frequency Encoder Normalized & IQR & RobustScaler & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+MLPClassifier & Frequency Encoder Normalized & IQR & MinMaxScaler & 0.41 ± 0.01 & 0.39 ± 0.01 \\
+MLPClassifier & Ordinal Encoder & Percentile & MinMaxScaler & 0.42 ± 0.01 & 0.40 ± 0.02 \\
+MLPClassifier & Ordinal Encoder & Percentile & StandardScaler & 0.42 ± 0.01 & 0.40 ± 0.01 \\
+MLPClassifier & Ordinal Encoder & Percentile & RobustScaler & 0.31 ± 0.02 & 0.31 ± 0.02 \\
+MLPClassifier & Ordinal Encoder & IQR & StandardScaler & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+MLPClassifier & Ordinal Encoder & IQR & MinMaxScaler & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+MLPClassifier & Ordinal Encoder & IQR & RobustScaler & 0.41 ± 0.01 & 0.39 ± 0.02 \\
+GradientBoostingClassifier & Frequency Encoder & Percentile & RobustScaler & 0.46 ± 0.02 & 0.40 ± 0.00 \\
+GradientBoostingClassifier & Frequency Encoder & Percentile & StandardScaler & 0.45 ± 0.02 & 0.39 ± 0.01 \\
+GradientBoostingClassifier & Frequency Encoder & Percentile & MinMaxScaler & 0.46 ± 0.03 & 0.39 ± 0.01 \\
+GradientBoostingClassifier & Frequency Encoder & IQR & RobustScaler & 0.43 ± 0.03 & 0.39 ± 0.01 \\
+GradientBoostingClassifier & Frequency Encoder & IQR & StandardScaler & 0.44 ± 0.01 & 0.38 ± 0.01 \\
+GradientBoostingClassifier & Frequency Encoder & IQR & MinMaxScaler & 0.43 ± 0.02 & 0.35 ± 0.04 \\
+GradientBoostingClassifier & Frequency Encoder Normalized & Percentile & MinMaxScaler & 0.46 ± 0.01 & 0.40 ± 0.01 \\
+GradientBoostingClassifier & Frequency Encoder Normalized & Percentile & StandardScaler & 0.48 ± 0.03 & 0.39 ± 0.01 \\
+GradientBoostingClassifier & Frequency Encoder Normalized & Percentile & RobustScaler & 0.45 ± 0.02 & 0.39 ± 0.01 \\
+GradientBoostingClassifier & Frequency Encoder Normalized & IQR & MinMaxScaler & 0.43 ± 0.01 & 0.38 ± 0.01 \\
+GradientBoostingClassifier & Frequency Encoder Normalized & IQR & RobustScaler & 0.44 ± 0.04 & 0.38 ± 0.01 \\
+GradientBoostingClassifier & Frequency Encoder Normalized & IQR & StandardScaler & 0.43 ± 0.02 & 0.38 ± 0.00 \\
+GradientBoostingClassifier & Ordinal Encoder & Percentile & StandardScaler & 0.46 ± 0.01 & 0.38 ± 0.02 \\
+GradientBoostingClassifier & Ordinal Encoder & Percentile & MinMaxScaler & 0.47 ± 0.04 & 0.38 ± 0.00 \\
+GradientBoostingClassifier & Ordinal Encoder & Percentile & RobustScaler & 0.45 ± 0.05 & 0.37 ± 0.04 \\
+GradientBoostingClassifier & Ordinal Encoder & IQR & StandardScaler & 0.45 ± 0.04 & 0.38 ± 0.02 \\
+GradientBoostingClassifier & Ordinal Encoder & IQR & RobustScaler & 0.45 ± 0.02 & 0.38 ± 0.01 \\
+GradientBoostingClassifier & Ordinal Encoder & IQR & MinMaxScaler & 0.43 ± 0.01 & 0.37 ± 0.01 \\
+\bottomrule
+\end{tabular}
