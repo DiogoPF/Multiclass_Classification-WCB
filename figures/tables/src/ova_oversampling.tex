@@ -1,0 +1,16 @@
+\begin{tabular}{lllll}
+\toprule
+Model & Oversampling & Neighbours & F1 Train Score & F1 Validation Score \\
+\midrule
+OneVsRestClassifier & None & - & 0.39 ± 0.01 & 0.37 ± 0.0 \\
+MLPClassifier & None & - & 0.42 ± 0.0 & 0.4 ± 0.01 \\
+OneVsRestClassifier & SMOTE & 5 & 0.52 ± 0.01 & 0.37 ± 0.04 \\
+OneVsRestClassifier & SMOTE & 10 & 0.52 ± 0.01 & 0.37 ± 0.03 \\
+MLPClassifier & SMOTE & 5 & 0.46 ± 0.01 & 0.36 ± 0.02 \\
+MLPClassifier & SMOTE & 10 & 0.44 ± 0.02 & 0.34 ± 0.05 \\
+OneVsRestClassifier & ADASYN & 5 & 0.52 ± 0.02 & 0.35 ± 0.03 \\
+OneVsRestClassifier & ADASYN & 10 & 0.52 ± 0.03 & 0.38 ± 0.02 \\
+MLPClassifier & ADASYN & 5 & 0.44 ± 0.01 & 0.33 ± 0.03 \\
+MLPClassifier & ADASYN & 10 & 0.43 ± 0.02 & 0.33 ± 0.06 \\
+\bottomrule
+\end{tabular}
